@@ -3,7 +3,9 @@
 </script>
 
 <template>
-Hello there!
+  <div class="bg-blue-950 w-full min-h-screen">
+    <Header/>
+  </div>
 </template>
 
 <style scoped>
