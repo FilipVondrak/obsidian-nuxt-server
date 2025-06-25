@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import '~/assets/css/styles.css'
+  let loggedIn = false;
 </script>
 
 <template>
@@ -12,9 +13,12 @@
       </h1>
 
       <!-- Right: Auth Links -->
-      <div class="flex items-center gap-4">
-        <NuxtLink to="/signin" class="text-sm text-gray-400 hover:text-gray-200 transition">Sign in</NuxtLink>
-        <NuxtLink to="/signup" class="bg-white text-black text-sm font-semibold px-4 py-1.5 rounded-md hover:bg-gray-200 transition">Sign up</NuxtLink>
+      <div v-if="loggedIn">
+
+      </div>
+      <div v-else class="flex items-center gap-4">
+        <NuxtLink to="/auth/signin" class="text-sm text-gray-400 hover:text-gray-200 transition">Sign in</NuxtLink>
+        <NuxtLink to="/auth/signup" class="bg-white text-black text-sm font-semibold px-4 py-1.5 rounded-md hover:bg-gray-200 transition">Sign up</NuxtLink>
       </div>
 
     </header>
