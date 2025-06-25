@@ -1,10 +1,10 @@
 <script setup lang="ts">
-
+  import '~/assets/css/styles.css'
 </script>
 
 <template>
-  <div class="bg-blue-950 w-full min-h-screen">
-    <Header/>
+  <div class="background w-full h-full">
+
   </div>
 </template>
 
