@@ -29,7 +29,9 @@
       </div>
 
     </header>
+    <hr>
   </div>
+
 </template>
 
 <style scoped>

@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindTypography from '@tailwindcss/typography';
+
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
@@ -11,6 +14,11 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/tailwindcss'
   ],
+  tailwindcss: {
+    config: {
+      plugins: [tailwindTypography],
+    }
+  },
   css: ['~/assets/css/main.css'],
   ui: {
     theme: {
@@ -33,7 +41,7 @@ export default defineNuxtConfig({
     build: {
       markdown: {
         toc: {
-          depth: 6,
+          depth: 5,
         },
         highlight: {
           theme: 'github-dark',

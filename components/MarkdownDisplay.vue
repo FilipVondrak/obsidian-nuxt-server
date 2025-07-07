@@ -11,6 +11,8 @@ useSeoMeta({
 </script>
 
 <template>
-  <ContentRenderer v-if="page" :value="page" />
-  <div v-else>Page not found</div>
+  <div>
+    <ContentRenderer class="prose" v-if="page" :value="page" />
+    <div v-else>Page not found</div>
+  </div>
 </template>
