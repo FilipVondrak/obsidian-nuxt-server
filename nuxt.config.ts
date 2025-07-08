@@ -40,6 +40,9 @@ export default defineNuxtConfig({
   content: {
     build: {
       markdown: {
+        remarkPlugins: {
+          'remark-breaks': { }
+        },
         toc: {
           depth: 5,
         },
