@@ -46,18 +46,18 @@ export default defineNuxtConfig({
         highlight: {
           theme: 'github-dark',
           langs: [
-              'c',
-              'cpp',
-              'java',
-              'javascript',
-              'cs',
-              'css',
-              'typescript',
-              'html',
-              'asm',
-              'bash'
+            'c',
+            'cpp',
+            'java',
+            'javascript',
+            'cs',
+            'css',
+            'typescript',
+            'html',
+            'asm',
+            'bash'
           ]
+        }
       }
-    }
   }
 }})
