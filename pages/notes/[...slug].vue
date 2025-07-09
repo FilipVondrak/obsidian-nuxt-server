@@ -4,21 +4,26 @@ import MarkdownDisplay from "~/components/MarkdownDisplay.vue";
 </script>
 
 <template>
-  <main class="flex justify-center flex-col-reverse md:flex-row gap-4 p-5">
-    <aside class="flex-1 md:left-0 md:top-64 md:sticky md:max-h-4 border-2 rounded-md min-h-32">
-      <FileBrowser/>
+  <main class="flex justify-center flex-col-reverse md:flex-row gap-4 p-5 md:p-0 md:gap-0 ">
+    <aside class="flex-1 bg-primary  md:border-r border rounded-2xl md:rounded-none
+                  md:border-0 border-border p-5 md:p-0 md:pl-5">
+      <div class="md:sticky md:top-21 w-full h-auto">
+        text
+        <FileBrowser/>
+      </div>
     </aside>
-    <div class="flex-2 border-border p-5 ">
+    <div class="flex-2 bg-background p-5 ">
       <article>
-        <h1 class="text-4xl">Heading</h1>
-        <br><br>
-        <MarkdownDisplay>
-        </MarkdownDisplay>
-
+        <div class="flex justify-center">
+          <MarkdownDisplay/>
+        </div>
       </article>
     </div>
-    <aside class="flex-1 md:right-0 md:top-64 md:sticky md:max-h-4 border-2 rounded-md min-h-32">
-
+    <aside class="flex-1 bg-primary  md:border-l border rounded-2xl md:rounded-none
+                  md:border-0 border-border p-5 md:p-0 md:pl-5 md:pr-5">
+      <div class="md:sticky md:top-21 w-full h-auto">
+        Hello there!
+      </div>
     </aside>
   </main>
 </template>

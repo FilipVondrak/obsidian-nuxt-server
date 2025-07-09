@@ -6,12 +6,12 @@
 </script>
 
 <template>
-  <div class="bg-background sticky top-0 z-50 w-full">
+  <div class="bg-primary sticky top-0 z-50 w-full border-border border-b shadow-md">
     <header class=" max-w-screen-xl mx-auto flex justify-between items-center px-6 py-6">
 
       <!-- Left: Logo -->
       <h1 class="font-bold text-lg sm:text-xl xl:text-2xl">
-        <NuxtLink to="/" class="text-primary">{{ appConfig.siteName }}</NuxtLink>
+        <NuxtLink to="/" class="text-accent">{{ appConfig.siteName }}</NuxtLink>
       </h1>
 
       <!-- Links -->
@@ -23,13 +23,12 @@
         <NuxtLink to="/auth/signin" class="text-sm text-text hover:text-gray-200 transition">
           Sign in
         </NuxtLink>
-        <NuxtLink to="/auth/signup" class="bg-primary text-background text-black text-sm font-semibold px-4 py-1.5 rounded-md hover:bg-gray-200 transition">
+        <NuxtLink to="/auth/signup" class="bg-accent text-background text-black text-sm font-semibold px-4 py-1.5 rounded-md hover:bg-gray-200 transition">
           Sign up
         </NuxtLink>
       </div>
 
     </header>
-    <hr>
   </div>
 
 </template>

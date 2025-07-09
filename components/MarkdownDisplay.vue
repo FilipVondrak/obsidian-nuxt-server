@@ -12,10 +12,11 @@ useSeoMeta({
 </script>
 
 <template>
-  <h1 class="text-4xl">{{ title }}</h1>
-  <br><br>
-  <div class="prose prose-blue dark:prose-invert">
-    <ContentRenderer v-if="page" :value="page" />
-    <div v-else>Page not found</div>
+  <div>
+    <h1 class="text-4xl text-center text-accent">{{ title }}</h1>
+    <div class="prose prose-blue dark:prose-invert">
+      <ContentRenderer v-if="page" :value="page" />
+      <div v-else>Page not found</div>
+    </div>
   </div>
 </template>
