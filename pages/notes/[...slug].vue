@@ -6,9 +6,8 @@ import MarkdownDisplay from "~/components/MarkdownDisplay.vue";
 <template>
   <main class="flex justify-center flex-col-reverse md:flex-row gap-4 p-5 md:p-0 md:gap-0 ">
     <aside class="flex-1 bg-primary  md:border-r border rounded-2xl md:rounded-none
-                  md:border-0 border-border p-5 md:p-0 md:pl-5">
-      <div class="md:sticky md:top-21 w-full h-auto">
-        text
+                  md:border-0 border-border p-5 md:p-0">
+      <div class="md:sticky md:top-21 w-full h-auto scroll-auto">
         <FileBrowser/>
       </div>
     </aside>
