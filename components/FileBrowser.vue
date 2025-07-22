@@ -3,12 +3,15 @@ const navItems = await useNavItems();
 </script>
 
 <template>
-  <UNavigationMenu orientation="vertical"
-                   :items="navItems"
-                   highlight
-                   color="accent"
-                   highlight-color="accent"
-                   class="data-[orientation=vertical]:w-full scroll-auto" />
+  <UNavigationMenu
+      orientation="vertical"
+      :items="navItems"
+      highlight
+      color="accent"
+      highlight-color="accent"
+      class=""
+
+  />
 </template>
 
 <style scoped>
