@@ -6,6 +6,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   modules: [
+    './modules/copy-images',
+    './modules/copy-notes',
     '@nuxt/content',
     '@nuxt/fonts',
     '@nuxt/icon',
@@ -62,5 +64,6 @@ export default defineNuxtConfig({
           ]
         }
       }
-  }
-}})
+    }
+  },
+})
